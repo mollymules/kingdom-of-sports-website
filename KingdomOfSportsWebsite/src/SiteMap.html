@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Site Map{% endblock %}
+
+{% block content %}
+
+<h2 class="sports">Site Map</h2>
+<div id="sitemap">
+	<ul >
+		<li><a href="/" title="Go to the Welcome to Kingdom of Sports page">Home</a></li>
+		<li><a href="/Sports" title="Sports & Activities">Sports and Activities</a>
+			<ul>
+				<li><a href="/Sports" title="Go to the Sports page">Sports</a></li>
+				<li><a href="/Activities" title="Go to the Activities page">Activities</a></li>
+			</ul>
+		<li><a href="/Pricing" title="Go to the Pricing page">Pricing</a>
+			<ul>
+				<li><a href="/Pricing" title="Go to the Pricing page">Pricing Information</a></li>
+				<li><a href="/Packages" title="Go to the Packages page">Packages</a></li>
+				<li><a href="/Tournaments" title="Go to the Tournaments page">Tournaments</a></li>
+				<li><a href="/Membership" title="Go to the Membership page">Membership</a></li>
+			</ul>
+		<li><a href="/BookNow" title="Go to the Enquiry page">Enquiry</a>
+		<li><a href="/Contact" title="Go to the Gift Vouchers page">Find Us</a></li>
+		<li><a href="/Gallery" title="Go to the Gallery page">Gallery</a>
+			
+	</ul>
+</div>
+{% endblock %}

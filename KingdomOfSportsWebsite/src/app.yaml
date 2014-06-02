@@ -1,0 +1,29 @@
+application: kingdom-of-sports
+version: 2-2
+runtime: python27
+threadsafe: yes
+api_version: 1
+
+libraries:
+- name: webapp2
+  version: latest
+
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /js
+  static_dir: js
+  
+- url: /images
+  static_dir: images
+
+- url: /downloads
+  static_dir: downloads
+
+- url: /Admin/.*
+  script: admin.app
+  login: admin
+
+- url: /.*
+  script: main.app

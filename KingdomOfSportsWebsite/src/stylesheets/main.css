@@ -1,0 +1,395 @@
+/* ========================== Page Layout ====================== */
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #EEEEEE;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
+#body {
+	padding-bottom: 90px;
+}
+
+#main-content {
+	background: white;
+	border: 1px solid;
+	border-radius: 10px;
+	border-color: white;
+}
+
+#main-content h2 {
+	background: grey;
+	color: white;
+}
+
+.content-row {
+	padding: 2%;
+}
+
+/* ========================== Top Menus ====================== */
+
+/* ======== Small Bar Menu ======== */
+div#top-nav-bar {
+	overflow: hidden;
+	width: 100%;
+	margin: 0;
+	padding: 5px 0 0 0;
+	background-color: green;
+	background-image: linear-gradient(to bottom, darkgreen, #005a00);
+}
+
+div#top-nav-bar ul {
+	float: right;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-right: 10px;
+	margin-bottom: 5px;
+}
+
+div#top-nav-bar ul li {
+	float: left;
+	border-left: 1px solid grey;
+	padding: 0 5px 0 0;
+	height: 1.4em;
+}
+
+div#top-nav-bar ul li.first {
+	border: none;
+}
+
+div#top-nav-bar ul li.last {
+	padding: 0;
+}
+
+div#top-nav-bar ul li a {
+	text-decoration: none;
+	color: white;
+	padding: 0 0 0 7px;
+	font-size: 11px;
+}
+
+/* ======== Logo and Button Menu ======== */
+#top-section {
+	border-bottom: 2px solid green;
+	background-color: #000;
+}
+
+#logo {
+	margin: 3%;
+}
+
+#logo img {
+	margin: auto;
+}
+
+#button-menu {
+	margin: 5%;
+}
+
+.btn-group {
+	margin: 1%;
+}
+
+.dropdown-menu>li>a:hover {
+	background-color: green;
+	color: white;
+	background-image: linear-gradient(to bottom, green, darkgreen);
+}
+
+ul.nav li.dropdown:hover>ul.dropdown-menu {
+	display: block;
+}
+
+/* ========================== Footer Section ====================== */
+#footer {
+	bottom: 0;
+	width: 100%;
+	height: 230px; /* Height of the footer */
+	padding: 5px 0;
+	background: url(../images/footer.jpg) repeat-x 50% 0;
+}
+
+#footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#footer a {
+	color: white;
+	font-weight: bolder;
+	font-size: 1.1em;
+}
+
+#footer h4 {
+	border-bottom: 2px solid white;
+	color: white;
+}
+
+.footer-icon{
+	padding: 0%;
+}
+
+.footer-icon img{
+	float: right;
+}
+
+#fixed-footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 45px;
+	width: 100%;
+	background: #333;
+	z-index: 10000;
+	margin-left: 0px;
+}
+
+#phone-footer {
+	left: 0px;
+	bottom: 0px;
+	margin-top: -25px;
+	width: 100%;
+	background: #333;
+	margin-left: 0px;
+}
+
+.grey-footer p {
+	color: white;
+	font-size: 1.1em;
+	padding-top: 5%;
+}
+
+.grey-footer img {
+	padding: 8px;
+}
+
+.grey-footer img.social {
+	padding: 0;
+	margin-top: 8px;
+}
+
+/* ========================== Picture Album and Blurb ====================== */
+.slider-wrapper {
+	text-align: center;
+	overflow: hidden;
+}
+
+.slider-holder {
+	background: url(../images/leaderboard.jpg);
+	padding: 10px;
+	margin: 5px;
+	-moz-border-radius: 11px;
+	border-radius: 11px;
+	-webkit-border-radius: 11px;
+	box-shadow: 0px 0px 5px #668eb9;
+	-webkit-box-shadow: 0px 0px 5px #668eb9;
+	-moz-box-shadow: 0px 0px 5px #668eb9;
+	behavior: url(PIE.htc);
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	width: 75%;
+}
+
+.slider-holder .nivo-caption {
+	position: absolute;
+	left: -58px;
+	top: 8px;
+	background: none;
+	width: 810px;
+}
+
+.slider-holder .nivo-caption p {
+	text-align: left;
+	z-index: 100;
+	transition: none;
+}
+
+.slider-holder .nivo-caption span {
+	background: #A00000;
+	color: whitesmoke;
+	float: left;
+	clear: left;
+	font: bold 175% 'Share', cursive;
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1 );
+	transition: none;
+	margin-right: 20px;
+	margin-left: 50px;
+	margin-bottom: 10px;
+	padding: 0 20px;
+	z-index: 220;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.99862953, M12=0.05233596, M21=-0.05233596, M22=0.99862953,sizingMethod='auto expand')";
+	filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.99862953, M12=0.05233596, M21=-0.05233596, M22=0.99862953,sizingMethod='auto expand');
+	-moz-transform:  matrix(0.99862953, -0.05233596, 0.05233596, 0.99862953, 0, 0);
+	-webkit-transform:  matrix(0.99862953, -0.05233596, 0.05233596, 0.99862953, 0, 0);
+	-o-transform:  matrix(0.99862953, -0.05233596, 0.05233596, 0.99862953, 0, 0);
+}
+
+.slider-holder .nivo-caption .red span{
+	background: #A00000;
+}
+
+.slider-holder .nivo-caption span:first-child {
+	margin-top: 30px;
+}
+
+/* ========================== Intro and Ad ====================== */
+#intro p {
+	font-size: 16px;
+	color: black;
+}
+
+#intro h2 {
+	color: #056B3A;
+	margin-top: 10px;
+}
+
+#blurb {
+	padding: 10px;
+	background-color: #056839;
+	border: 1px solid;
+	border-radius: 10px;
+	border-color: #056839;
+	background-image: linear-gradient(to bottom, green, #056839);
+}
+
+#blurb p {
+	color: whitesmoke;
+}
+
+#blurb li {
+	color: whitesmoke;
+}
+
+#blurb h3 {
+	text-align: center;
+	color: whitesmoke;
+}
+
+#blurb h5 {
+	padding: 10px;
+	text-align: center;
+	font-size: 14px;
+	color: whitesmoke;
+}
+
+/* ========================== Leader Board ====================== */
+#video-leader {
+	margin-top: 30px;
+}
+
+.leader-table {
+	padding: 3%;
+}
+
+/* ========================== Book Now / Payment Pages ====================== */
+h2.sports {
+	text-align: center;
+	color: black;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+h3.sports {
+	color: black;
+	padding-top: 20px;
+	text-decoration: underline;
+}
+
+h4.sports {
+	color: #056B3A;
+	padding-top: 10px;
+}
+
+p.sports {
+	color: black;
+	font-size: 14px;
+}
+
+#newletter-submit {
+	color: green;
+	background-color: white;
+	border: 1px solid;
+	border-radius: 10px;
+	border-color: white;
+	width: 80px;
+	height: 40px;
+	margin: 0px auto;
+	display: block;
+	margin-top: 20px;
+}
+
+.footnote {
+	margin-top: 35px;
+}
+
+.ui-datepicker table{
+   background: #EEE;
+   border: 2px solid #CCC;
+   color: #EEE;
+ }
+
+/* ========================== Gallery ====================== */
+.singleFbAlbum {
+	margin-bottom: 3%;
+	margin-top: 3%;
+	height: 12em;
+}
+
+.singleFbAlbum img {
+	margin: auto;
+}
+
+/* ========================== FAQ ====================== */
+#faq {
+	margin-top: 20px;
+}
+
+#faq li {
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+#faq p {
+	font-weight: normal;
+	font-size: 13px;
+	margin-top: 9px;
+}
+
+#faq-facilities {
+	list-style-type: disc;
+}
+
+#faq-facilities li {
+	font-weight: normal;
+	font-size: 12px;
+	margin-bottom: 0px;
+}
+
+/* ========================== Contact/Find us ====================== */
+#directions h4 {
+	margin-top: 20px;
+}
+
+#contact-us {
+	margin-top: 30px;
+}
+
+#contact-us p {
+	font-weight: bold;
+	font-size: 16px;
+	color: green;
+}
+
+#sitemap ul {
+	list-style: none;
+	list-style-type: none;
+}

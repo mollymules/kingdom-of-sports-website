@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Book Now{% endblock %}
+{% block content %}
+
+<h2 class="sports">Enquiry</h2>
+<form class="form-horizontal" role="form" action="/BookNow" method="POST">
+	<div class="form-group">
+		<label for="inputName" class="col-sm-2 control-label">Full Name</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="inputName" name="name" placeholder="Your full name here" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputPhone" class="col-sm-2 control-label">Phone Number</label>
+		<div class="col-sm-10"> 
+			<input type="text" class="form-control" id="inputPhone" name="phone" placeholder="Your phone number here" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputEmail" class="col-sm-2 control-label">Email Address</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="inputEmail" name="email" placeholder="Your email address here" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputDate" class="col-sm-2 control-label">Preferred Date</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="inputDate" name="date" placeholder="Your preferred date here">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="inputMessage" class="col-sm-2 control-label">Message</label> 
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="inputMessage" name="message" placeholder="Any additional message here">
+		</div>
+	</div>
+	 <div class="form-group">
+	    <div class="col-sm-offset-2 col-sm-10">
+	      <button type="submit" class="btn-default btn-lg">Submit</button>
+	    </div>
+  	</div>
+</form>
+
+{% endblock %}
+
+{% block javascript %}
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript">  $(function() {
+    $( "#inputDate" ).datepicker({ 
+    	dateFormat: 'dd-mm-yy',
+    	altFormat: 'dd-mm-yy',
+    });
+});</script>
+{% endblock %}
