@@ -7,25 +7,27 @@
 <div class="row content-row">
 	<div class="col-md-8">
 		<div class="row">
-		<p>Booking is recommended for individuals and essential for groups.</p>
+		<h4>Booking is recommended for individuals and essential for groups.</h4>
 		</div>
 		
 		<div class="row">
-			<h4 class="sports">Access to the Kingdom of Sports arena is:</h4><br/>						
-			<table id="pricing1" border="0">
-				<tbody>
-				<tr>
-					<td><p>Off–Peak (Mon to Thurs) </p></td>
-					<td><p>&nbsp; &nbsp; €10.00</p></td>
-					<td><p>&nbsp; &nbsp;&nbsp; &nbsp;1.5hrs of playing time</p></td>
-				</tr>
-				<tr>
-					<td><p>Peak (Fri – Sun & Bank Holidays) </p></td>
-					<td><p>&nbsp; &nbsp; €15.00</p></td>
-					<td><p>&nbsp; &nbsp;&nbsp; &nbsp; 1.5hrs of playing time</p></td>
-				</tr>
-				</tbody>
-			</table>
+			<h4 class="sports">Access to the Kingdom of Sports arena is:</h4><br/>	
+			<div class="table-responsive">					
+				<table class="table">
+					<tbody>
+					<tr>
+						<td><p>Off–Peak (Mon to Thurs) </p></td>
+						<td><p>€10.00</p></td>
+						<td><p>1.5hrs of playing time</p></td>
+					</tr>
+					<tr>
+						<td><p>Peak (Fri – Sun & Bank Holidays) </p></td>
+						<td><p>€15.00</p></td>
+						<td><p>1.5hrs of playing time</p></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 		
 		<div class="row">
@@ -40,7 +42,7 @@
 			<h3>Newsletter Signup</h3>
 			<form action="/Newsletter" method="POST" class="text-center">
 				<p>Enter your email address below to receive our newsletter.</p><br/>
-				<p>{{ message }}</p>
+				<p style="background:#A00000">{{ message }}</p>
 				<input name="email" class="input-xlarge" type="email" required />
 				<br/>
 				<input type="submit" value="Submit" id="newletter-submit" />			

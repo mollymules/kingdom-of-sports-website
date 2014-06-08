@@ -141,7 +141,7 @@ class NewsletterSignUp(webapp2.RequestHandler):
         else:    
             isSignedUp = Newsletter.query(Newsletter.email == emailAddress).get()
             if isSignedUp is None:
-                newSignUp = Newsletter(email = emailAddress, date = datetime.datetime.now(), subscribed = True)
+                newSignUp = Newsletter(email = emailAddress, date = datetime.now(), subscribed = True)
                 newSignUp.put() 
                 template_values = {'message': 'Thanks for signing up!'}
             else:      

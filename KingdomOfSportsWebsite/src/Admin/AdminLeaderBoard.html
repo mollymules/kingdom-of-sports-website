@@ -2,93 +2,90 @@
 <html>
 <head>
 	<link rel="stylesheet" href="../stylesheets/bootstrap.min.css">
-	<link rel="stylesheet" href="../stylesheets/bootstrap-responsive.css">
-	<link rel="stylesheet" href="../stylesheets/datepicker.css">
 </head>
-<body>
-<h2 class="sports">Add to Leaderboards</h2>
-<div class='row'>
-	<div class="span6" style="background-color: lightblue;">
-		<h3>Men Result Addition</h3>
-		<form action="/Admin/Leader" method="POST">
-		<input name="board" value='m' type='hidden'/>
-			<div class="row" style="margin-top: 10px;">
-				<div class="offset1">
-					<div class="row">
-						<div class="span3">
-							<h3>Full Name</h3>
-						</div> 
-						<div class="span4">
-							<input type="text" class="input-xlarge" name="name" />
+<body class='container'>
+	<h2 class="sports">Add to Leaderboards</h2>
+	<p>Email address is used as a unique key to save entries to the database. Please use a person's real email address from the KOS form, otherwise use the format: firstname.lastname@kos.ie</p>
+	<div class='row'>
+		<div class="col-md-6" style="background-color: lightblue;">
+			<h3>Men Result Addition</h3>
+			<form action="/Admin/Leader" method="POST">
+			<input name="board" value='m' type='hidden'/>
+				<div class="row" style="margin-top: 10px;">
+					<div class="col-md-offset-1">
+						<div class="row">
+							<div class="col-md-8">
+								<h3>Full Name</h3>
+							</div> 
+							<div class="col-md-4">
+								<input type="text" class="input-xlarge" name="name" />
+							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="span3">
-							<h3>Email Address</h3>
-						</div> 
-						<div class="span4"> 
-							<input name="email" class="input-xlarge" type="email" required />
+						<div class="row">
+							<div class="col-md-8">
+								<h3>Email Address</h3>
+							</div> 
+							<div class="col-md-4"> 
+								<input name="email" class="input-xlarge" type="email" required />
+							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="span3">
-							<h3>Score</h3> 
-						</div> 
-						<div class="span4">
-							<input type="integer" class="input-large" name="score" />
+						<div class="row">
+							<div class="col-md-8">
+								<h3>Score</h3> 
+							</div> 
+							<div class="col-md-4">
+								<input type="integer" class="input-large" name="score" />
+							</div>
 						</div>
+						<br/>
 					</div>
-					<br/>
 				</div>
-			</div>
-			<div class="row text-center enquiry">
-				<input type="submit" value="Submit" id='man-submit'/>
-			</div>
-		</form>
-	</div>
-	<div class="span6" style="background-color: lightpink;">
-		<h3>Women Result Addition</h3>
-		<form action="/Admin/Leader" method="POST">
-			<input name="board" value='f' type='hidden'/>
-			<div class="row" style="margin-top: 10px;">
-				<div class="offset1">
-					<div class="row">
-						<div class="span3">
-							<h3>Full Name</h3>
-						</div> 
-						<div class="span4">
-							<input type="text" class="input-xlarge" name="name" />
-						</div>
-					</div>
-					<div class="row">
-						<div class="span3">
-							<h3>Email Address</h3>
-						</div> 
-						<div class="span4"> 
-							<input name="email" class="input-xlarge" type="email" required />
-						</div>
-					</div>
-					<div class="row">
-						<div class="span3">
-							<h3>Score</h3> 
-						</div> 
-						<div class="span4">
-							<input type="integer" class="input-large" name="score" />
-						</div>
-					</div>
-					<br/>
+				<div class="row text-center enquiry">
+					<input type="submit" value="Submit" id='man-submit'/>
 				</div>
-			</div>
-			<div class="row text-center enquiry">
-				<input type="submit" value="Submit" id='woman-submit' />
-			</div>
-		</form>
+			</form>
+		</div>
+		<div class="col-md-6" style="background-color: lightpink;">
+			<h3>Women Result Addition</h3>
+			<form action="/Admin/Leader" method="POST">
+				<input name="board" value='f' type='hidden'/>
+				<div class="row" style="margin-top: 10px;">
+					<div class="col-md-offset-1">
+						<div class="row">
+							<div class="col-md-8">
+								<h3>Full Name</h3>
+							</div> 
+							<div class="col-md-4">
+								<input type="text" class="input-xlarge" name="name" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+								<h3>Email Address</h3>
+							</div> 
+							<div class="col-md-4"> 
+								<input name="email" class="input-xlarge" type="email" required />
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+								<h3>Score</h3> 
+							</div> 
+							<div class="col-md-4">
+								<input type="integer" class="input-large" name="score" />
+							</div>
+						</div>
+						<br/>
+					</div>
+				</div>
+				<div class="row text-center enquiry">
+					<input type="submit" value="Submit" id='woman-submit' />
+				</div>
+			</form>
+		</div>
 	</div>
-</div>
 </body>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../js/jquery.innerfade.js"></script>
-	<script type="text/javascript" src="../js/bootstrap-datepicker.js"></script>
 	<script type="text/javascript" src="../js/main.js"></script>
 </html>
