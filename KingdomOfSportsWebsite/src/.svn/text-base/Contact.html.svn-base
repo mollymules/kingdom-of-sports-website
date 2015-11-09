@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Contact{% endblock %}
+{% block content %}
+<h2 class="sports">Contact/Find us</h2>
+<div class="row content-row">
+	<div class="col-md-4 text-center">
+		<p class="sports">Contact <strong>Kingdom of Sports</strong><br/>
+			Phone: (044) 931 3000<br/>
+			Email: <a href="mailto:info@kingdomofsports.ie">info@kingdomofsports.ie</a>
+		</p>
+		<p class="sports"><strong>Opening Hours</strong><br/>
+			Hours: 12pm - 8pm<br/>
+			Days: 7 days a week<br/>
+			Note - Last entry to the arena is 7pm.
+		</p>
+	</div>
+	<div class="col-md-6 col-md-offset-1">
+		<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ie/maps/ms?msa=0&amp;msid=209159154291574086565.0004de43bb5a88a8a552a&amp;ie=UTF8&amp;t=m&amp;ll=53.527095,-7.334447&amp;spn=0.008929,0.018282&amp;z=15&amp;output=embed"></iframe><br /><small>View <a href="https://maps.google.ie/maps/ms?msa=0&amp;msid=209159154291574086565.0004de43bb5a88a8a552a&amp;ie=UTF8&amp;t=m&amp;ll=53.527095,-7.334447&amp;spn=0.008929,0.018282&amp;z=15&amp;source=embed" style="color:#0000FF;text-align:left">Kingdom of Sports</a> in a larger map</small>
+	</div>
+</div>
+<div class="row content-row" id="directions">
+	<p>
+			<h4>By Train</h4>
+	
+			Mullingar Train Station is on the Sligo - Dublin Route and trains leave Dublin Connolly & Silgo Stations every two hours each day arriving in Mullingar station 1 hour later. 
+			For timetables and further information please log onto <a href="http://www.irishrail.ie">www.irishrail.ie</a>.
+			<ul>
+				<li>From Mullingar train station walk to main street (Patrick Street).</li>
+				<li>Continue walking down Mullingar high street until you reach the Austin Friar Hotel on your left hand side.</li>
+				<li>Continue walking up the one way McCurtain Street. </li>
+				<li> When you reach McCurtain Street cross the road to Canal Avenue and Kingdom of Sports is on your left.</li>
+			</ul>
+			Walking time approx 15 mins
+			
+			<h4>By Bus</h4>
+	
+			Buses leave Dublin and Galway regularly through a few companies but every hour from Bus Eireann. 
+			For timetables, routes and further information please log onto Bus Eireann at <a href="http://www.buseireann.ie">www.buseireann.ie</a>. 
+			<ul>
+			<li>From main bus stop walk to Austin Friar Hotel on your left hand side</li>
+			<li>Continue walking up the one way, McCurtain Street. </li>
+			<li>When you reach McCurtain Street cross the road to Canal Avenue and Kingdom of Sports is on your left.</li>
+			</ul>
+			Walking time approx 5 mins
+	
+			<h4>By Car</h4>
+			See Google Maps for directions or use these coordinates (53.527235, -7.334427) in a sat nav.
+		</p>
+</div>
+<div class="row content-row" id="contact-us">
+	<p>For more information, browse through our <a href="/FAQ">Frequently Asked Questions</a> or contact us through our <a href="/BookNow">Enquiry</a> page.</p>
+</div>
+{% endblock %}

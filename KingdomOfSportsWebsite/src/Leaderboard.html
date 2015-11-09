@@ -1,69 +1,76 @@
-{% extends "base.html" %}
-{% block title %}Leaderboards{% endblock %}
+{% extends "base.html" %} 
+{% block title %}Leaderboards{% endblock %} 
 {% block content %}
 <h2 class="sports">Leaderboards</h2>
 <div class="row content-row">
-	<div class='col-md-6 text-center'>
-		<h3 style="color:#056B3A;"> Men's Leaderboard</h2>
-		<div class="table-responsive leader-table">
-			<table class="table">
-				<thead>
-				<tr>
-					<td>Place</td>
-					<td>Name</td>
-					<td>Score</td>
-				</tr>
-				</thead>
-	  			<tbody id='men-leader-table-body'></tbody>
-			</table>
-		</div>
-	</div>
-	<div class='col-md-6 text-center'>
-		<h3 style="color:#056B3A;"> Women's Leaderboard</h2>
-		<div class="table-responsive leader-table">
-			<table class="table">
-				<thead>
-				<tr>
-					<td>Place</td>
-					<td>Name</td>
-					<td>Score</td>
-				</tr>
-				</thead>
-	  			<tbody id='women-leader-table-body'></tbody>
-			</table>		
-		</div>
-	</div>
+  <div class='col-md-6 text-center'>
+    <h3 style="color: #056B3A;">
+      Men's Leaderboard
+      </h2>
+      <div class="table-responsive leader-table">
+        <table class="table">
+          <thead>
+            <tr>
+              <td>Place</td>
+              <td>Name</td>
+              <td>Score</td>
+            </tr>
+          </thead>
+          <tbody id='men-leader-table-body'></tbody>
+        </table>
+      </div>
+  </div>
+  <div class='col-md-6 text-center'>
+    <h3 style="color: #056B3A;">
+      Women's Leaderboard
+      </h2>
+      <div class="table-responsive leader-table">
+        <table class="table">
+          <thead>
+            <tr>
+              <td>Place</td>
+              <td>Name</td>
+              <td>Score</td>
+            </tr>
+          </thead>
+          <tbody id='women-leader-table-body'></tbody>
+        </table>
+      </div>
+  </div>
 </div>
 <script type="text/javascript">
-	$( document ).ready(function() {
-		$.ajax({
-			   type: 'GET',
-			   url: '/GetMenLeaderBoard',
-			   dataType : 'json',
-			   success : function(resp) 
-			             {
-				   			leaderboardRow = '';
-				   			$.each(resp, function() {
-				   				leaderboardRow += '<tr><td>'+this.position+'.</td><td>'+this.name+'</td><td>'+this.score+'</td></tr>';
-				   		    });
-				   			
-				   			$('#men-leader-table-body').html(leaderboardRow)
-			             }
-			   });
+	$(document).ready(
+			function() {
 				$.ajax({
-					   type: 'GET',
-					   url: '/GetWomenLeaderBoard',
-					   dataType : 'json',
-					   success : function(resp) 
-					             {
-						   			leaderboardRow = '';
-						   			$.each(resp, function() {
-						   				leaderboardRow += '<tr><td>'+this.position+'.</td><td>'+this.name+'</td><td>'+this.score+'</td></tr>';
-						   		    });
-						   			
-						   			$('#women-leader-table-body').html(leaderboardRow)
-					             }
-					   });
-	});
+					type : 'GET',
+					url : '/GetMenLeaderBoard',
+					dataType : 'json',
+					success : function(resp) {
+						leaderboardRow = '';
+						$.each(resp, function() {
+							leaderboardRow += '<tr><td>' + this.position
+									+ '.</td><td>' + this.name + '</td><td>'
+									+ this.score + '</td></tr>';
+						});
+
+						$('#men-leader-table-body').html(leaderboardRow)
+					}
+				});
+				$.ajax({
+					type : 'GET',
+					url : '/GetWomenLeaderBoard',
+					dataType : 'json',
+					success : function(resp) {
+						leaderboardRow = '';
+						$.each(resp, function() {
+							leaderboardRow += '<tr><td>' + this.position
+									+ '.</td><td>' + this.name + '</td><td>'
+									+ this.score + '</td></tr>';
+						});
+
+						$('#women-leader-table-body').html(leaderboardRow)
+					}
+				});
+			});
 </script>
 {% endblock %}

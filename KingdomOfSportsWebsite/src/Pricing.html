@@ -1,56 +1,60 @@
-{% extends "base.html" %}
-
-{% block title %}Pricing{% endblock %}
-
+{% extends "base.html" %} 
+{% block title %}Pricing{% endblock %} 
 {% block content %}
 <h2 class="sports">Pricing</h2>
 <div class="row content-row">
-	<div class="col-md-8">
-		<div class="row">
-		<h4>Booking is recommended for individuals and essential for groups.</h4>
-		</div>
-		
-		<div class="row">
-			<h4 class="sports">Access to the Kingdom of Sports arena is:</h4><br/>	
-			<div class="table-responsive">					
-				<table class="table">
-					<tbody>
-					<tr>
-						<td><p>Off–Peak (Mon to Thurs) </p></td>
-						<td><p>€10.00</p></td>
-						<td><p>1.5hrs of playing time</p></td>
-					</tr>
-					<tr>
-						<td><p>Peak (Fri – Sun & Bank Holidays) </p></td>
-						<td><p>€15.00</p></td>
-						<td><p>1.5hrs of playing time</p></td>
-					</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-		
-		<div class="row">
-			<h4 class="sports">Special Offers</h4>	
-			<p>Keep an eye out on our website and on Facebook/Twitter for Special Offers
-			Sign up to our Newsletter and become a fan on Facebook or follow us on Twitter to win free passes</p>
-		</div>
-		
-	</div>
-	<div class="col-md-4">
-		<div id=blurb>
-			<h3>Newsletter Signup</h3>
-			<form action="/Newsletter" method="POST" class="text-center">
-				<p>Enter your email address below to receive our newsletter.</p><br/>
-				<p style="background:#A00000">{{ message }}</p>
-				<input name="email" class="input-xlarge" type="email" required />
-				<br/>
-				<input type="submit" value="Submit" id="newletter-submit" />			
-			</form>		 
-		</div>
-	</div>
+  <div class="col-md-8">
+    <div class="row">
+      <h4>Individuals and small groups can drop in any time, but booking required for larger groups or occasions.</h4>
+      <h6>Please note : last round starts at 7.30pm</h6>
+    </div>
+    <div class="row">
+      <h4 class="sports">Access to the Kingdom of Sports arena is:</h4>
+      <br />
+      <div class="table-responsive">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td><p>Off–Peak (Mon to Thurs)</p></td>
+              <td><p>€10.00</p></td>
+              <td><p>1.5hrs of playing time</p></td>
+            </tr>
+            <tr>
+              <td><p>Peak (Fri – Sun & Bank Holidays)</p></td>
+              <td><p>€15.00</p></td>
+              <td><p>1.5hrs of playing time</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <h4 class="sports">Special Offers</h4>
+      <p>Keep an eye out on our website and on Facebook/Twitter for Special Offers Sign up to our Newsletter and become a fan on Facebook or follow us on Twitter to
+        win free passes</p>
+    </div>
+  </div>
+  
+  <div class="col-md-4 text-center">
+    
+    <h2 style="color: green">Summer Special</h2>
+    <img class="img-responsive" style="display: inline; height: 200px;" src="images/sun.gif" />
+    <h4 style="color: green">€10 per person everyday</h4>
+
+    <div id=blurb>
+      <h3>Newsletter Signup</h3>
+      <form action="/Newsletter" method="POST" class="text-center">
+        <p>Enter your email address below to receive our newsletter.</p>
+        <br />
+        <p style="background: #A00000">{{ message }}</p>
+        <input name="email" class="input-xlarge" type="email" required /> <br /> <input type="submit" value="Submit" id="newletter-submit" />
+      </form>
+    </div>
+  </div>
 </div>
 <div class="row footnote">
-	<p>We also have package deals for Groups, School Tours, Stag/Hens and Corporate events. Please see our <a href="/Packages">Packages</a> page for more info.</p>
+  <p>
+    We also have package deals for Groups, School Tours, Stag/Hens and Corporate events. Please see our <a href="/Packages">Packages</a> page for more info.
+  </p>
 </div>
 {% endblock %}

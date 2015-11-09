@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}Groups{% endblock %}
+
+{% block content %}
+<h2 class="sports">Packages</h2>
+<div class="row content-row">
+	<div class="col-md-7">
+		<h3 class="sports">Stags / Hens</h3>
+		<ul>
+			<li>€10 Off–Peak (Mon to Thurs) for 2hrs of playing time</li>
+			<li>€15 Peak (Fri – Sun & Bank Holidays) for 2hrs of playing time
+			<li>With food:* €7 extra per person</li>
+		</ul>
+		
+		<h3 class="sports">School Tours / Club Nights /Groups under 16</h3>
+		<ul>
+			<li>€10 Off–Peak (Mon to Thurs) for 2hrs of playing time</li>
+			<li>€15 Peak (Fri – Sun & Bank Holidays) for 2hrs of playing time
+			<li>With food:* €5 extra per person</li>
+		</ul>
+		
+		<h3 class="sports">Corporate</h3>
+		<ul>
+			<li>€10 Off–Peak (Mon to Thurs) for 2hrs of playing time</li>
+			<li>€15 Peak (Fri – Sun & Bank Holidays) for 2hrs of playing time
+			<li>With food:* €7 extra per person</li>
+		</ul>
+					
+	</div>
+	<div class="col-md-4" id=blurb>
+		<h3>Group Extras</h3>
+		<p>
+		All our group bookings (>10) are entitled to free Competition service! All competitors scores are evaluated and a free prized given to the Kingdom of Sports Champion!
+		<br/><br/>
+		Prize winners and runner ups will be presented and photographed on our Kingdom of Sports podium to go on our Wall of Fame!
+		<br/><br/>
+		Groups also receive an extra half an hour playing time as we have found groups can take longer to complete the Arena
+		<br/>
+		</p>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<p>*Food includes a selection of wedges, pizza and chicken to be eating on site in our café area. Pre-Booking is essential for food service </p>		
+		<h4 class="sports">All occasions are catered for, so for your next:</h4><br/>
+		<ul>
+			<li>Birthday party</li>
+			<li>Club event</li> 
+			<li>Meeting</li> 
+			<li>Medal ceremony</li>
+		</ul>
+		<p>Or for any event, you will find Kingdom of Sports to be the perfect venue.</p><br/>
+	</div>	
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<p>Download your invitations for a Kingdom of Sports party <a href='/downloads/invitation.pdf' target='_blank'>here</a>. When the file opens, you can download or print straight from the window.</p><br/>
+	</div>	
+</div>
+
+{% endblock %}

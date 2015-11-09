@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Testimonials{% endblock %}
+
+{% block content %}
+<h2 class="sports">Testimonials</h2>
+
+<p style="margin-top: 110px; margin-bottom: 60px; text-align:center;">Be the first to comment on our new activity! 
+Visit our <a href="https://www.facebook.com/pages/Kingdom-of-Sports/275078275954895?fref=ts">facebook</a> page and leave us a comment 
+or send us a <a href="https://twitter.com/KoSIreland">tweet</a>.</p>
+
+{% endblock %}

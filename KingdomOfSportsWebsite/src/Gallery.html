@@ -1,13 +1,8 @@
-{% extends "base.html" %}
-
-{% block title %}Gallery{% endblock %}
-
+{% extends "base.html" %} 
+{% block title %}Gallery{% endblock %} 
 {% block content %}
 <h2 class="sports">Gallery</h2>
 <div class="row" id="fbAlbums"></div>
-
-{% endblock %}
-
-{% block javascript %}
+{% endblock %} {% block javascript %}
 <script type="text/javascript"> getFacebookAlbums();</script>
 {% endblock %}

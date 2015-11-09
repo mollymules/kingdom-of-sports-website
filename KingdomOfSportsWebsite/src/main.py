@@ -161,8 +161,22 @@ class DownloadInvitaton(webapp2.RequestHandler):
         self.response.headers['Content-Type'] = 'text/pdf'
         self.response.headers['Content-Disposition'] = 'attachment; filename=invitation.pdf'
         self.response.out.write(csv)
-
         
+class DownloadHours(webapp2.RequestHandler):    
+    def get(self):
+        csv = List2CSV(testvalues)
+        self.response.headers['Content-Type'] = 'text/pdf'
+        self.response.headers['Content-Disposition'] = 'attachment; filename=christmas.pdf'
+        self.response.out.write(csv)
+        
+class DownloadSchools(webapp2.RequestHandler):    
+    def get(self):
+        csv = List2CSV(testvalues)
+        self.response.headers['Content-Type'] = 'text/pdf'
+        self.response.headers['Content-Disposition'] = 'attachment; filename=schools.pdf'
+        self.response.out.write(csv)  
+        
+             
 app = webapp2.WSGIApplication([('/', MainPage),
                                       ('/Activities', Activities),
                                       ('/Sports', Sports),
@@ -181,6 +195,7 @@ app = webapp2.WSGIApplication([('/', MainPage),
                                       ('/Tournaments', Tournaments),
                                       ('/SiteMap', SiteMap),
                                       ('/Invitation', DownloadInvitaton),
+                                      ('/Schools', DownloadSchools),
                                       ], debug=True)
 
 

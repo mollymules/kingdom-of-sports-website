@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Tournaments{% endblock %}
+
+{% block content %}
+<h2 class="sports">Tournaments</h2>
+
+<div class="row content-row">
+	<h3 class="sports">Kingdom of Sports will be running social team tournaments.</h3><br/>
+	
+	<h4 class="sports">So Sign up Now</h4><br/>
+	<p class="sports">
+	The Tournament will be run on a league basis with the top four teams making the playoffs!<br/>
+	
+	The four remaining teams will play in semi-finals to see who goes through to the Kingdom of Sports Grand Final where the Kingdom of Sports League Champion will be Crowned!
+	<br/>
+	Squads can be up to six members but only 4 scores count at any one time
+	<br/>
+	Teams will be play a full round of the Kingdom of Sports arena competing directly against the opponents score to see who wins the match.
+	<br/>
+	3 points for the win and 1 for a draw. Scores are updated each week to show up to date league standings
+	<br/>
+	For more information please call (044) 931 3000 or enquire <a href="/BookNow">here</a>.</p>
+</div>
+{% endblock %}
